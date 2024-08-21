@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: [Inter], Arial, Helvetica, sans-serif;
+}
+
+nav {
+  margin: 50px 0 30px;
+}
+@media (max-width: 992px) {
+  nav {
+    margin: 15px 0;
+  }
+}
+nav .menu {
+  width: 55px;
+  height: 27px;
+}
+nav .navbar-nav .close-icon {
+  display: none;
+}
+nav .navbar-nav .nav-item {
+  margin-left: 35px;
+}
+nav .navbar-nav .nav-item a:hover {
+  color: hsl(5, 85%, 63%);
+}
+@media (max-width: 992px) {
+  nav .navbar-nav.show {
+    display: flex !important;
+    position: fixed;
+    right: 0;
+    background: white;
+    top: 0;
+    height: 100vh;
+    color: black;
+    width: 70%;
+    z-index: 10;
+  }
+  nav .navbar-nav.show .close-icon {
+    display: flex;
+    justify-content: end;
+    padding: 32px 24px;
+    margin-bottom: 50px;
+  }
+  nav .navbar-nav.show li {
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }
+  nav .navbar-nav.show li a {
+    color: black;
+  }
+  nav .navbar-nav + .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    display: none;
+  }
+  nav .navbar-nav + .overlay.show {
+    display: block;
+  }
+}
+
+main .above {
+  margin-bottom: 50px;
+}
+main .above .middle-box {
+  margin-top: 20px;
+}
+@media (max-width: 992px) {
+  main .above .middle-box {
+    margin-bottom: 70px;
+  }
+}
+main .above .middle-box h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  color: hsl(240, 100%, 5%);
+}
+@media (max-width: 992px) {
+  main .above .middle-box h1 {
+    font-size: 48px;
+  }
+}
+main .above .middle-box p {
+  color: hsl(236, 13%, 42%);
+  margin-bottom: 30px;
+  font-size: 19px;
+}
+main .above .middle-box button {
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  text-transform: uppercase;
+  color: hsl(240, 100%, 5%);
+  padding: 15px 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+main .above .middle-box button:hover {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(233, 8%, 79%);
+}
+main .above .sidebar {
+  background-color: hsl(240, 100%, 5%);
+  padding: 20px 30px;
+}
+@media (max-width: 992px) {
+  main .above .sidebar {
+    padding: 20px;
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
+}
+main .above .sidebar h3 {
+  color: hsl(35, 77%, 62%);
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+main .above .sidebar article {
+  margin-bottom: 30px;
+}
+main .above .sidebar article h4 {
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+}
+main .above .sidebar article h4:hover {
+  color: hsl(35, 77%, 62%);
+}
+main .above .sidebar article .article-body {
+  color: hsl(233, 8%, 79%);
+  line-height: 1.6;
+  font-size: 18px;
+}
+main .above .sidebar hr {
+  border-color: hsl(36, 100%, 99%);
+}
+main .bottom > div {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  main .bottom > div {
+    margin-bottom: 40px;
+  }
+}
+main .bottom > div img {
+  width: 100px;
+  height: 140px;
+  margin-right: 20px;
+}
+@media (max-width: 992px) {
+  main .bottom > div .box-content {
+    margin-bottom: 20px;
+  }
+}
+main .bottom > div .box-content h4 {
+  font-size: 30px;
+  color: hsl(5, 85%, 63%);
+  font-weight: 700;
+}
+main .bottom > div .box-content h3 {
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+main .bottom > div .box-content h3:hover {
+  color: hsl(5, 85%, 63%);
+}
+main .bottom > div .box-content p {
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 17px;
+}/*# sourceMappingURL=index.css.map */
